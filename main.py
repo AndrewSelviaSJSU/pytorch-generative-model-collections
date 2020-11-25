@@ -32,7 +32,7 @@ def parse_args():
     parser.add_argument('--lrD', type=float, default=0.0002)
     parser.add_argument('--beta1', type=float, default=0.5)
     parser.add_argument('--beta2', type=float, default=0.999)
-    parser.add_argument('--gpu_mode', type=bool, default=True)
+    parser.add_argument('--gpu_mode', action='store_true')
     parser.add_argument('--benchmark_mode', type=bool, default=True)
 
     return check_args(parser.parse_args())
